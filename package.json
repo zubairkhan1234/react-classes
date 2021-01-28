@@ -1,7 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
-  "homepage": "https://github.com/zubairkhan1234/react-classes/tree/master/class%2001/myapp/public",
+  "homepage": "https://zubairkhan1234.github.io/react-classes",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
