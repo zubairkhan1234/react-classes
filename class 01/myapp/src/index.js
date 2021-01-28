@@ -26,10 +26,10 @@ function Hi() {
 }
 
 
-function FacebookMedia() {
-  var date = new Date().toLocaleTimeString()
-  var profile = {
-    date: date,
+function FacebookMedia(profile) {
+
+   profile = {
+    date: new Date().toLocaleTimeString(),
     userName: "Muhammad zubair",
     profilePic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     title: "Czech football season to resume at the end of May",
@@ -41,9 +41,13 @@ function FacebookMedia() {
 
     <div className="mediacard">
       <div className="userData" >
-        <img className="userprofile" src={profile.profilePic}></img>
-        <span className="userName">{profile.userName}</span>
-        <p className="date">{profile.date}</p>
+        <div className="userImage">
+          <img className="userprofile" src={profile.profilePic}></img>
+        </div>
+        <div className="NameDate">
+          <span className="userName">{profile.userName}</span><br />
+          <span className="date">{profile.date}</span>
+        </div>
       </div>
       <h3>{profile.title}</h3>
       <p>{profile.body}</p>
